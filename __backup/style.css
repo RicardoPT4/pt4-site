@@ -1,0 +1,133 @@
+:root {
+  --verde: #38be45;        /* verde vivo: fundos e botões, sempre com texto escuro */
+  --verde-texto: #1e7f24;  /* verde para texto e ícones sobre branco (contraste AA) */
+  --verde-suave: #ecf8ed;
+  --escuro: #14230b;
+  --texto: #1f2937;
+  --cinza: #5b6474;
+  --borda: #e3e8dc;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font: 16px/1.6 Inter, system-ui, -apple-system, sans-serif;
+  color: var(--texto);
+  background: #fff;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--verde-texto); }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+.centro { text-align: center; }
+.lead { font-size: 1.15rem; color: var(--cinza); max-width: 640px; }
+.centro.lead { margin: 0 auto 2.5rem; }
+section[id] { scroll-margin-top: 72px; }
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: .8em 1.6em;
+  border-radius: 8px;
+  border: 2px solid var(--verde);
+  background: var(--verde);
+  color: var(--escuro);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.btn:hover { background: var(--escuro); border-color: var(--escuro); color: #fff; transform: translateY(-2px); }
+.btn-sm { padding: .45em 1.1em; }
+.btn-linha { background: transparent; border-color: #fff; color: #fff; }
+.btn-linha:hover { background: #fff; color: var(--escuro); border-color: #fff; }
+.btn-escuro { background: var(--escuro); color: #fff; border-color: var(--escuro); }
+.btn-escuro:hover { background: #fff; color: var(--escuro); border-color: #fff; }
+
+/* Cabeçalho */
+.topo {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, .95);
+  border-bottom: 1px solid var(--borda);
+  backdrop-filter: blur(6px);
+}
+.topo-in { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.marca { display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.25rem; color: var(--escuro); text-decoration: none; }
+.marca img { height: 44px; width: auto; max-width: none; }
+nav { display: flex; align-items: center; gap: 1.5rem; }
+nav a:not(.btn) { color: var(--texto); text-decoration: none; font-weight: 500; }
+nav a:not(.btn):hover { color: var(--verde-texto); }
+
+/* Hero */
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: clamp(80px, 14vw, 160px) 0 clamp(60px, 10vw, 120px);
+  background: linear-gradient(rgba(20, 35, 11, .8), rgba(20, 35, 11, .9)), url(img/reuniao.jpg) center / cover;
+}
+.hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); max-width: 800px; margin: 0 auto .4em; }
+.hero p { font-size: clamp(1.1rem, 2.5vw, 1.4rem); color: #c8f0cc; margin: 0 0 2rem; }
+.acoes { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.cegid { display: block; margin: 3rem auto 0; width: 200px; }
+
+/* Faixa de pontos fortes */
+.pontos { background: var(--verde-suave); padding: 2.5rem 0; text-align: center; }
+.pontos strong { display: block; color: var(--verde-texto); font-size: 1.15rem; }
+.pontos span { color: var(--cinza); font-size: .95rem; }
+
+/* Secções */
+.secao { padding: clamp(60px, 9vw, 100px) 0; }
+.suave { background: var(--verde-suave); }
+
+.grelha-4 { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+.duas-col { display: grid; gap: 3rem; align-items: center; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+.foto { border-radius: 12px; box-shadow: 0 20px 40px -15px rgba(0, 0, 0, .35); }
+
+.checks { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.checks li { padding-left: 1.8rem; margin-bottom: .6rem; position: relative; }
+.checks li::before {
+  content: "✓";
+  position: absolute; left: 0;
+  width: 1.3rem; height: 1.3rem; border-radius: 50%;
+  background: var(--verde); color: var(--escuro);
+  font-size: .8rem; font-weight: 700; line-height: 1.3rem; text-align: center;
+}
+
+/* Cartões de serviços */
+.cartao {
+  background: #fff;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.cartao:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(0, 0, 0, .3); border-color: var(--verde); }
+.cartao svg { width: 40px; height: 40px; fill: none; stroke: var(--verde-texto); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 1rem; }
+.cartao p { color: var(--cinza); }
+.cartao ul { padding-left: 1.1rem; margin: 0; color: var(--cinza); font-size: .95rem; }
+.cartao li::marker { color: var(--verde-texto); }
+
+/* Chamada à ação */
+.cta { background: var(--verde); color: var(--escuro); padding: 4rem 0; }
+.cta p { color: var(--escuro); margin: 0 0 2rem; font-size: 1.15rem; }
+
+/* Contactos */
+.contactos { margin-bottom: 2.5rem; }
+.contactos > div { border-top: 3px solid var(--verde); padding-top: 1rem; }
+.contactos h3 { font-size: 1.05rem; color: var(--escuro); }
+.contactos p { margin: 0; color: var(--cinza); }
+.contactos small { font-size: .8rem; }
+
+/* Rodapé */
+.rodape { background: var(--verde); color: var(--escuro); padding: 2rem 0 1.25rem; font-size: .9rem; text-align: center; }
+.rodape p { margin: 1.25rem 0 0; }
+/* logótipos PRR/UE ficam sobre branco, como pedem as regras de publicitação dos fundos */
+.financiamento { background: #fff; border-radius: 10px; padding: 1rem 1.5rem; }
+.financiamento img { display: block; margin: 0 auto; max-height: 64px; width: auto; }
+
+@media (max-width: 560px) {
+  nav { gap: 1rem; }
+  nav a:not(.btn) { display: none; }  /* em telemóvel fica só o botão Contactos */
+}

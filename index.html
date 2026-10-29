@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PT4 | Parceiro Cegid PHC — implementação, desenvolvimento e suporte</title>
+  <meta name="description" content="A PT4 é parceira Cegid PHC em Loures. Implementamos e adaptamos o PHC CS, desenvolvemos aplicações e integrações à medida e damos suporte técnico às empresas.">
+  <link rel="canonical" href="https://pt4.pt/">
+  <meta name="theme-color" content="#0b1410">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:site_name" content="PT4">
+  <meta property="og:url" content="https://pt4.pt/">
+  <meta property="og:title" content="PT4 | Parceiro Cegid PHC">
+  <meta property="og:description" content="Implementação PHC, desenvolvimento à medida, consultoria de TI e suporte técnico para empresas.">
+  <meta property="og:image" content="https://pt4.pt/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="img/logo.ico" sizes="any">
+  <link rel="apple-touch-icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- .js ativa as revelações; se o main.js não carregar, tira-se para nada ficar invisível -->
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.pt4)document.documentElement.classList.remove('js')},2500)</script>
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PT4",
+    "url": "https://pt4.pt/",
+    "logo": "https://pt4.pt/img/logo.png",
+    "image": "https://pt4.pt/img/og.png",
+    "description": "Parceiro Cegid PHC: implementação PHC, desenvolvimento à medida, consultoria de TI e suporte técnico.",
+    "email": "suporte@pt4.pt",
+    "telephone": "+351210170577",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Pedro Álvares Cabral, n.º 24, 3.º E",
+      "postalCode": "2670-391",
+      "addressLocality": "Loures",
+      "addressCountry": "PT"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+<a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="wrap topo-in">
+    <a href="#inicio" class="marca" aria-label="PT4, início">
+      <img src="img/logo-88.png" alt="" width="40" height="40">
+      <span>PT4</span>
+    </a>
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-btn-linhas" aria-hidden="true"></span>
+      <span class="sr">Menu</span>
+    </button>
+
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#metodo">Como trabalhamos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contactos" class="btn btn-sm">Pedir contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- Hero -->
+  <section id="inicio" class="hero escuro" aria-labelledby="hero-titulo">
+    <div class="hero-fundo" aria-hidden="true">
+      <div class="hero-brilho"></div>
+      <div class="hero-barras"><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <div class="wrap hero-in">
+      <div class="hero-texto">
+        <p class="sobretitulo entra" style="--d:1">Parceiro Cegid PHC</p>
+        <h1 id="hero-titulo" class="entra" style="--d:2">O PHC <em>à medida</em> da sua empresa.</h1>
+        <p class="hero-sub entra" style="--d:3">Implementamos e adaptamos o PHC CS, desenvolvemos as aplicações e integrações que lhe faltam e damos suporte técnico a quem o usa todos os dias.</p>
+        <div class="acoes entra" style="--d:4">
+          <a href="#contactos" class="btn">Pedir contacto <span class="seta" aria-hidden="true">→</span></a>
+          <a href="#servicos" class="btn btn-fantasma">Ver serviços</a>
+        </div>
+        <ul class="hero-factos entra" style="--d:5">
+          <li><img src="img/cegid-partner-440.png" alt="Cegid Partner Enterprise — Cegid PHC CS" width="132" height="57"></li>
+          <li>Suporte 24/7 para clientes enterprise</li>
+          <li>Loures, Portugal</li>
+        </ul>
+      </div>
+
+      <figure class="hero-visual entra" style="--d:6">
+        <svg class="diagrama" viewBox="0 0 360 400" role="img" aria-labelledby="diag-t">
+          <title id="diag-t">Ilustração: o PHC CS ligado à gestão comercial, aos stocks e armazém, às aplicações web e móveis e a integrações por API.</title>
+          <defs>
+            <pattern id="pontos" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" /></pattern>
+          </defs>
+          <rect class="d-grelha" width="360" height="400" fill="url(#pontos)" />
+          <circle class="d-anel" cx="180" cy="200" r="74" />
+          <circle class="d-anel d-anel-2" cx="180" cy="200" r="118" />
+
+          <g class="d-linhas">
+            <path pathLength="100" d="M150 180 C150 120 80 124 80 68" />
+            <path pathLength="100" d="M210 180 C210 120 280 124 280 68" />
+            <path pathLength="100" d="M150 220 C150 280 80 276 80 332" />
+            <path pathLength="100" d="M210 220 C210 280 280 276 280 332" />
+          </g>
+          <g class="d-pulsos">
+            <path pathLength="100" d="M150 180 C150 120 80 124 80 68" />
+            <path pathLength="100" d="M280 68 C280 124 210 120 210 180" />
+            <path pathLength="100" d="M80 332 C80 276 150 280 150 220" />
+            <path pathLength="100" d="M210 220 C210 280 280 276 280 332" />
+          </g>
+
+          <g class="d-no d-centro">
+            <rect x="120" y="176" width="120" height="48" rx="14" />
+            <text x="180" y="206">PHC CS</text>
+          </g>
+          <g class="d-no" style="--n:0"><rect x="2" y="28" width="156" height="40" rx="20" /><circle cx="20" cy="48" r="4" /><text x="31" y="53">Gestão comercial</text></g>
+          <g class="d-no" style="--n:1"><rect x="202" y="28" width="156" height="40" rx="20" /><circle cx="220" cy="48" r="4" /><text x="231" y="53">Stocks e armazém</text></g>
+          <g class="d-no" style="--n:2"><rect x="2" y="332" width="156" height="40" rx="20" /><circle cx="20" cy="352" r="4" /><text x="31" y="357">Apps web e móveis</text></g>
+          <g class="d-no" style="--n:3"><rect x="202" y="332" width="156" height="40" rx="20" /><circle cx="220" cy="352" r="4" /><text x="231" y="357">Integrações API</text></g>
+        </svg>
+        <figcaption>Ilustração — o PHC no centro da operação</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="secao" aria-labelledby="servicos-titulo">
+    <div class="wrap">
+      <header class="secao-cab revela">
+        <p class="sobretitulo">Serviços</p>
+        <h2 id="servicos-titulo">Tudo o que o seu PHC precisa, numa só equipa.</h2>
+        <p class="lead">Da implementação ao suporte diário, passando pelas aplicações e integrações que tornam o PHC parte de toda a operação.</p>
+      </header>
+
+      <div class="cartoes">
+        <article class="cartao revela" style="--atraso:0">
+          <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 14h3M8 17h6"/></svg>
+          <h3>Software PHC</h3>
+          <p>Implementação e configuração do PHC CS, ajustadas aos processos da sua empresa.</p>
+          <ul><li>PHC Advanced</li><li>PHC Corporate</li><li>PHC Enterprise</li><li>Módulos especializados</li></ul>
+        </article>
+        <article class="cartao revela" style="--atraso:1">
+          <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Z"/></svg>
+          <h3>Consultoria de TI</h3>
+          <p>Analisamos processos e sistemas para decidir o que otimizar, o que automatizar e por onde começar.</p>
+          <ul><li>Análise de processos</li><li>Otimização de sistemas</li><li>Planeamento estratégico</li><li>Formação de equipas</li></ul>
+        </article>
+        <article class="cartao revela" style="--atraso:2">
+          <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+          <h3>Desenvolvimento à medida</h3>
+          <p>Aplicações web e móveis e integrações por API que ligam o PHC ao resto da operação.</p>
+          <ul><li>Aplicações web</li><li>Aplicações móveis</li><li>Integrações API</li><li>Automação de processos</li></ul>
+        </article>
+        <article class="cartao revela" style="--atraso:3">
+          <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2M21 15a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2ZM3 15a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2Z"/><path d="M18 17v1a3 3 0 0 1-3 3h-3"/></svg>
+          <h3>Suporte técnico</h3>
+          <p>Suporte especializado para manter os seus sistemas a funcionar, com cobertura 24/7 para clientes enterprise.</p>
+          <ul><li>Assistência remota</li><li>Manutenção preventiva</li><li>Resolução rápida</li><li>Monitorização</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Método -->
+  <section id="metodo" class="secao superficie" aria-labelledby="metodo-titulo">
+    <div class="wrap">
+      <header class="secao-cab revela">
+        <p class="sobretitulo">Como trabalhamos</p>
+        <h2 id="metodo-titulo">Um processo claro, do primeiro contacto ao dia a dia.</h2>
+      </header>
+
+      <ol class="passos revela">
+        <li class="passo" style="--atraso:0">
+          <span class="passo-n" aria-hidden="true">01</span>
+          <h3>Análise</h3>
+          <p>Percebemos como a sua empresa trabalha e o que o sistema tem de resolver.</p>
+        </li>
+        <li class="passo" style="--atraso:1">
+          <span class="passo-n" aria-hidden="true">02</span>
+          <h3>Implementação</h3>
+          <p>Configuramos o PHC e desenvolvemos à medida o que for preciso.</p>
+        </li>
+        <li class="passo" style="--atraso:2">
+          <span class="passo-n" aria-hidden="true">03</span>
+          <h3>Formação</h3>
+          <p>Preparamos as equipas para usarem o sistema com autonomia.</p>
+        </li>
+        <li class="passo" style="--atraso:3">
+          <span class="passo-n" aria-hidden="true">04</span>
+          <h3>Acompanhamento</h3>
+          <p>Suporte técnico, manutenção preventiva e monitorização contínua.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="secao escuro" aria-labelledby="sobre-titulo">
+    <div class="hero-barras sobre-barras" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="wrap sobre-in">
+      <div class="revela">
+        <p class="sobretitulo">Sobre a PT4</p>
+        <h2 id="sobre-titulo">Uma equipa especializada em PHC.</h2>
+        <p class="lead">Somos uma empresa de soluções de software para o mercado empresarial, com foco em implementações PHC.</p>
+        <p>O nosso objetivo é fornecer soluções tecnológicas que ajudam as empresas a otimizar os seus processos e a aumentar a produtividade. Trabalhamos em software PHC, desenvolvimento à medida, consultoria de TI e fornecimento de hardware empresarial.</p>
+      </div>
+      <div class="sobre-lado revela" style="--atraso:1">
+        <ul class="checks">
+          <li>Parceiro Cegid PHC</li>
+          <li>Equipa especializada e certificada</li>
+          <li>Soluções à medida para cada empresa</li>
+          <li>Suporte 24/7 para clientes enterprise</li>
+        </ul>
+        <img class="selo" src="img/cegid-partner-440.png" alt="Cegid Partner Enterprise — Cegid PHC CS" width="220" height="94" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contactos -->
+  <section id="contactos" class="secao" aria-labelledby="contactos-titulo">
+    <div class="wrap contactos-in">
+      <div class="revela">
+        <p class="sobretitulo">Contactos</p>
+        <h2 id="contactos-titulo">Vamos falar sobre o seu PHC.</h2>
+        <p class="lead">Conte-nos o que precisa. Estamos disponíveis de segunda a sexta, das 9h às 18h.</p>
+
+        <dl class="dados">
+          <div>
+            <dt>Telefone</dt>
+            <dd><a href="tel:+351210170577">+351 210 170 577</a><small>Chamada para a rede fixa nacional</small></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:suporte@pt4.pt">suporte@pt4.pt</a></dd>
+          </div>
+          <div>
+            <dt>Morada</dt>
+            <dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Pedro+%C3%81lvares+Cabral+24+2670-391+Loures" target="_blank" rel="noopener">Rua Pedro Álvares Cabral, n.º 24, 3.º E<br>2670-391 Loures, Portugal<span class="sr"> (abre o Google Maps num novo separador)</span></a></dd>
+          </div>
+          <div>
+            <dt>Horário</dt>
+            <dd>Segunda a sexta: 9h – 18h<small>Suporte técnico 24/7 para clientes enterprise</small></dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="form revela" style="--atraso:1" id="form-contacto" action="mailto:suporte@pt4.pt" method="post" enctype="text/plain" novalidate>
+        <h3>Pedido de contacto</h3>
+        <div class="campo">
+          <label for="f-nome">Nome</label>
+          <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="f-nome-erro">
+          <p class="erro" id="f-nome-erro"></p>
+        </div>
+        <div class="campo-par">
+          <div class="campo">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-erro">
+            <p class="erro" id="f-email-erro"></p>
+          </div>
+          <div class="campo">
+            <label for="f-tel">Telefone <span class="opc">(opcional)</span></label>
+            <input id="f-tel" name="telefone" type="tel" autocomplete="tel">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="f-empresa">Empresa <span class="opc">(opcional)</span></label>
+          <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+        </div>
+        <div class="campo">
+          <label for="f-msg">Mensagem</label>
+          <textarea id="f-msg" name="mensagem" rows="5" required minlength="10" aria-describedby="f-msg-erro"></textarea>
+          <p class="erro" id="f-msg-erro"></p>
+        </div>
+        <button class="btn btn-largo" type="submit">Preparar email <span class="seta" aria-hidden="true">→</span></button>
+        <p class="form-nota" id="form-estado" role="status">O pedido abre na sua aplicação de email, pronto a enviar para suporte@pt4.pt.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-topo">
+      <div class="rodape-marca">
+        <a href="#inicio" class="marca" aria-label="PT4, voltar ao início">
+          <img src="img/logo-88.png" alt="" width="40" height="40" loading="lazy">
+          <span>PT4</span>
+        </a>
+        <p>Parceiro Cegid PHC. Implementação, desenvolvimento à medida, consultoria de TI e suporte técnico.</p>
+      </div>
+      <nav class="rodape-links" aria-label="Rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#metodo">Como trabalhamos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contactos">Contactos</a>
+      </nav>
+      <address class="rodape-contactos">
+        <a href="tel:+351210170577">+351 210 170 577</a>
+        <a href="mailto:suporte@pt4.pt">suporte@pt4.pt</a>
+        <span>Rua Pedro Álvares Cabral, n.º 24, 3.º E<br>2670-391 Loures</span>
+      </address>
+    </div>
+
+    <div class="financiamento">
+      <img src="img/prr-logo.png" alt="PRR – Plano de Recuperação e Resiliência" width="497" height="168" loading="lazy">
+      <img src="img/prr-republica.png" alt="República Portuguesa" width="564" height="157" loading="lazy">
+      <img src="img/prr-ue.png" alt="Financiado pela União Europeia – NextGenerationEU" width="608" height="161" loading="lazy">
+    </div>
+
+    <div class="rodape-base">
+      <p>© 2026 PT4. Todos os direitos reservados.</p>
+      <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">Livro de Reclamações<span class="sr"> (abre num novo separador)</span></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
